@@ -1,0 +1,42 @@
+.section-2 .tit{
+    margin-top: 120px;
+    font-size: xx-large;
+}
+#skills{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    /*top:50%;*/
+    left: 50%;
+    margin-left: -300px;
+    /*margin-top: -150px;*/
+}
+.skill{
+    /*width: 150px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    height: 20px;
+    /*background: #5bc0de;*/
+    font-size: large;
+}
+.skilla{
+    background:#4169E1 ;
+}
+.skillb{
+    background:#4876FF ;
+}
+.skillc{
+    background:#5CACEE ;
+}
+.skilld{
+    background:#63B8FF ;
+}
+.skille{
+    background:#87CEFA ;
+}
+.skillf{
+    background:#8DEEEE ;
+}

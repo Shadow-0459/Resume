@@ -56,8 +56,22 @@
 		<div class="section section-2">
 
 			<div class="title">
-
-				<p class="tit">随便写写意思下!</p>
+                <p class="tit">技术专长</p>
+				<div id="skills">
+                    <span class="skill skilla">HTML/HTML5</span>
+                    <span class="skill skilla">CSS</span><br>
+                    <span class="skill skillb">Javascipt</span>
+                    <span class="skill skillb">Jquery</span><br>
+                    <span class="skill skillc">Bootstrap</span>
+                    <span class="skill skillc">Echarts</span><br>
+                    <span class="skill skilld">PHP</span>
+                    <span class="skill skilld">CI</span><br>
+                    <span class="skill skille">vue</span>
+                    <span class="skill skille">Angular</span>
+                    <span class="skill skille">React</span><br>
+                    <span class="skill skillf">GitHub客户端</span>
+                    <span class="skill skillf">SVN China</span>
+                </div>
 
 			</div>
 
@@ -67,9 +81,42 @@
 
 			<div class="title">
 
-				<p class="tit">随便写写意思下</p>
+				<p class="tit">成长时间轴</p>
+                <div class="about4">
+                    <div class="about4_ch">成长经历</div>
+                    <div class="about4_main">
 
-			</div>
+                        <div class="line"></div>
+                        <ul>
+                            <li>
+                                2014年9月走进大学的校园并成为班级综合委员
+                            </li>
+                            <li>
+                                2015年10月在学校获得了校级综合二等奖学金
+                            </li>
+                            <li>
+                                2015年12月我在北京阿牧网云实习了三个月产品经理
+                            </li>
+                            <li>
+                                2016年3月获得校级移动互联网创新大赛二等奖
+                            </li>
+                            <li>
+                                2016年4月开始学习前端技术并在6月过了四级
+                            </li>
+                            <li>
+                                2016年12月，开始了第一个项目
+                            </li>
+                            <li>
+                                2017年3月，开始准备实习
+                            </li>
+                            <li>
+                                2018年7月，等待毕业到来。。。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
 
 		</div>
 
@@ -117,11 +164,13 @@
 
 <script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/lib/jquery.SuperSlide.2.1.1.js"></script>
 <script src="js/lib/mousewheel.js"></script>
-<!--动态翻页-->
+<!--page-all动态翻页-->
 <script type="text/javascript" src="js/index.js"></script>
-<!--弹出框控件-->
-<script src="js/popup.js"></script>
+<!--pag1弹出框控件-->
+<script type="text/javascript" src="js/popup.js"></script>
+
 <script type="text/javascript">
 	$(function () {
 
@@ -129,8 +178,12 @@
 	<!--ifDrag: 是否拖拽-->
 	<!--dragLimit: 拖拽限制范围-->
 	<!---->
-	$('#popup').popup({ifDrag: true, dragLimit: true});
-
+	    $('#popup').popup({ifDrag: true, dragLimit: true});
+    //时间轴
+        var h = $(".about4_main ul li:first-child").height()/2;<!--第一个li高度的一半-->
+        var h1 = $(".about4_main ul li:last-child").height()/2;<!--最后一个li高度的一半-->
+        $(".line").css("top",h);
+        $(".line").height($(".about4_main").height()-h1-h);
 	});
 </script>
 </body>
