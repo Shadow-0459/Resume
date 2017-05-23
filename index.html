@@ -178,7 +178,7 @@
 					<li class="page5_img page5_weixin"></li>
 					<a href="http://weibo.com/3501875614/profile"><li class="page5_img page5_weibo"></li></a>
 					<li class="page5_img page5_phone"></li>
-					<li class="page5_img page5_email" class="page5_view"></li>
+					<li class="page5_img page5_email"></li>
 				</ul>
 				<div class="page5_buttons">
 					<a href="src/周士琪_前端工程师（实习）_13845989080.doc"><button class="page5_button button button-raised button-primary button-pill">下载doc简历</button></a>
@@ -220,6 +220,7 @@
 <!--pag1弹出框控件-->
 <script type="text/javascript" src="js/popup.js"></script>
 <!--page5弹出层插件	-->
+<!--<script type="text/javascript" src="js/lib/jquery-3.2.1.min"></script>-->
 <script type="text/javascript" src="js/layer.js"></script>
 <script type="text/javascript">
 	$(function () {
@@ -234,13 +235,44 @@
         var h1 = $(".about4_main ul li:last-child").height()/2;<!--最后一个li高度的一半-->
         $(".line").css("top",h);
         $(".line").height($(".about4_main").height()-h1-h);
-
-		$('#test2').on('click', function(){
+		$('.page5_phone').on('click', function(){
 			layer.open({
 				type: 1,
-				area: ['600px', '360px'],
+				area: ['300px', '150px'],
 				shadeClose: true, //点击遮罩关闭
-				content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+				content: '\<\div style="padding:20px; font-size:x-large;">电话：13845989080\<\/div>'
+			});
+		});
+		$('.page5_qq').on('click', function(){
+			layer.open({
+				type: 1,
+				area: ['300px', '150px'],
+				shadeClose: true, //点击遮罩关闭
+				content: '\<\div style="padding:20px; font-size:x-large;">QQ：736234860\<\/div>'
+			});
+		});
+		$('.page5_weixin').on('click', function(){
+			layer.open({
+				type: 1,
+				area: ['500px', '300px'],
+				shadeClose: true, //点击遮罩关闭
+				content: '\<\img src="img/weixin2d.jpg" style="margin-left: 125px; padding:20px; width:200px; height:200px;">用户名:dgx135\<\/div>'
+			});
+		});
+		$('.page5_email').on('click', function(){
+			layer.open({
+				type: 1,
+				area: ['300px', '150px'],
+				shadeClose: true, //点击遮罩关闭
+				content: '\<\div style="padding:20px; font-size:large;">邮箱：zsq960213@outlook.com\<\/div>'
+			});
+		});
+		$('.page5_view').on('click', function(){
+			layer.open({
+				type: 1,
+				area: ['500px', '300px'],
+				shadeClose: true, //点击遮罩关闭
+				content: '\<\img src="img/怪味豆2d.png" style="margin-left: 125px; padding:20px; width:200px; height:200px;">www.怪味豆.top\<\/div>'
 			});
 		});
 
