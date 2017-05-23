@@ -18,6 +18,9 @@
 	<link rel="stylesheet" type="text/css" href="css/page1.css" />
 	<link rel="stylesheet" type="text/css" href="css/page2.css" />
 	<link rel="stylesheet" type="text/css" href="css/page3.css" />
+	<link rel="stylesheet" type="text/css" href="css/page4.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap_button.css" />
+	<link rel="stylesheet" type="text/css" href="css/page5.css" />
 </head>
 
 <body>
@@ -124,8 +127,41 @@
 
 			<div class="title">
 
-				<p class="tit">随便写写意思下</p>
-
+				<p class="tit">个人项目/作品</p>
+				<ul id="page4_projects">
+					<li class="page4_project">
+						<img class="page4_project_img" src="img/git.png">
+						<div class="page4_project_details">
+							<span class="page4_project_name">我的GitHub博客</span>
+							<span class="page4_project_describe">记录我前端学习的github</span>
+							<a class="page4_project_url" href="https://github.com/Shadow-0459">https://github.com/Shadow-0459</a>
+						</div>
+					</li>
+					<li class="page4_project">
+						<img class="page4_project_img" src="img/简历.png">
+						<div class="page4_project_details">
+							<span class="page4_project_name">网页简历</span>
+							<span class="page4_project_describe">我自己做的网页版简历</span>
+							<a class="page4_project_url" href="http://www.lovelin.top">http://www.lovelin.top</a>
+						</div>
+					</li>
+					<li class="page4_project">
+						<img class="page4_project_img" src="img/网站.png">
+						<div class="page4_project_details">
+							<span class="page4_project_name">个人网站</span>
+							<span class="page4_project_describe">基础学过一遍之后做的个人网站</span>
+							<a class="page4_project_url" href="http://www.怪味豆.top">http://www.怪味豆.top</a>
+						</div>
+					</li>
+					<li class="page4_project">
+						<img class="page4_project_img" src="img/等待.png">
+						<div class="page4_project_details">
+							<span class="page4_project_name">虚位等待</span>
+							<span class="page4_project_describe">还没想好放什么</span>
+							<a class="page4_project_url" href="http://www.xiangxinziji.com">http://www.xiangxinziji.com</a>
+						</div>
+					</li>
+				</ul>
 			</div>
 
 		</div>
@@ -134,8 +170,21 @@
 
 			<div class="title">
 
-				<p class="tit">随便写写意思下</p>
-
+				<p class="tit page5_tit">联系方式/社交</p>
+				<!--<p class="tit page5_tit">联系方式/社交</p>-->
+				<ul class="page5_communication">
+					<a href="https://github.com/Shadow-0459"><li class="page5_img page5_git"></li></a>
+					<li class="page5_img page5_qq"></li>
+					<li class="page5_img page5_weixin"></li>
+					<a href="http://weibo.com/3501875614/profile"><li class="page5_img page5_weibo"></li></a>
+					<li class="page5_img page5_phone"></li>
+					<li class="page5_img page5_email" class="page5_view"></li>
+				</ul>
+				<div class="page5_buttons">
+					<a href="src/周士琪_前端工程师（实习）_13845989080.doc"><button class="page5_button button button-raised button-primary button-pill">下载doc简历</button></a>
+					<a href="src/周士琪_前端工程师（实习）_13845989080.pdf"><button class="page5_button button button-3d button-caution">下载pdf简历</button></a>
+					<button  class="page5_button button button-glow button-rounded button-royal page5_view">手机查看</button>
+				</div>
 			</div>
 
 		</div>
@@ -170,7 +219,8 @@
 <script type="text/javascript" src="js/index.js"></script>
 <!--pag1弹出框控件-->
 <script type="text/javascript" src="js/popup.js"></script>
-
+<!--page5弹出层插件	-->
+<script type="text/javascript" src="js/layer.js"></script>
 <script type="text/javascript">
 	$(function () {
 
@@ -184,6 +234,16 @@
         var h1 = $(".about4_main ul li:last-child").height()/2;<!--最后一个li高度的一半-->
         $(".line").css("top",h);
         $(".line").height($(".about4_main").height()-h1-h);
+
+		$('#test2').on('click', function(){
+			layer.open({
+				type: 1,
+				area: ['600px', '360px'],
+				shadeClose: true, //点击遮罩关闭
+				content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+			});
+		});
+
 	});
 </script>
 </body>

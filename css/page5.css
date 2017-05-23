@@ -1,0 +1,58 @@
+.page5_tit{
+    margin-top: 100px;
+}
+.page5_communication{
+    position: absolute;
+    width: 450px;
+    height: 60px;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: 150px;
+    /*background: #5cb85c;*/
+}
+.page5_img{
+    width:60px;
+    height: 60px;
+    /*border-radius: 100px;*/
+    margin-left: 15px;
+    background-size: cover;
+    float: left;
+}
+.page5_git{
+    background: url(../img/git2.png) no-repeat;
+}
+.page5_phone{
+    background: url(../img/phone.png) no-repeat;
+}
+.page5_qq{
+    background: url(../img/qq.png) no-repeat;
+}
+.page5_weixin{
+    background: url(../img/weixin.png) no-repeat;
+}
+.page5_weibo{
+    background: url(../img/weibo.png) no-repeat;
+}
+.page5_email{
+    background: url(../img/email.png) no-repeat;
+}
+.page5_buttons{
+    width: 500px;
+    height: 100px;
+    display: block;
+    /*top: 300px;*/
+    /*position: fixed;*/
+    position: absolute;
+    margin-top: 300px;
+    /*padding-top: 100px;*/
+    left: 50%;
+    margin-left: -250px;
+}
+.page5_button{
+    font-size: small;
+    text-align: center;
+    line-height: 30px;
+    width: 160px;
+    height: 35px;
+}
+
